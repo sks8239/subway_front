@@ -1,0 +1,316 @@
+.mid {
+  position: absolute;
+  padding-right : 50px;
+  padding-bottom: 50px;
+  border-radius: 50%;
+  /* background-color: white;
+  box-shadow: 0px 0px 5px gray; */
+  cursor: pointer;
+  transform: translate(-17px, -20px);
+  z-index: 100;
+}
+
+.big-width2{
+  position: absolute;
+  padding-right : 70px;
+  padding-bottom: 60px;
+  border-radius: 50%;
+  /* background-color: white;
+  box-shadow: 0px 0px 5px gray; */
+  cursor: pointer;
+  transform: translate(-20px, -18px);
+}
+.big-width3{
+  position: absolute;
+  padding-right : 100px;
+  padding-bottom: 60px;
+  border-radius: 50%;
+  /* background-color: white;
+  box-shadow: 0px 0px 5px gray; */
+  cursor: pointer;
+  transform: translate(-30px, -18px);
+}
+.big-width2rotate{
+  position: absolute;
+  padding-right : 70px;
+  padding-bottom: 60px;
+  border-radius: 50%;
+  /* background-color: white;
+  box-shadow: 0px 0px 5px gray; */
+  cursor: pointer;
+  transform : rotate(-45deg);
+  transform: translate(-20px, -18px);
+}
+.big-width4{
+  position: absolute;
+  padding-right : 120px;
+  padding-bottom: 70px;
+  border-radius: 50%;
+  /* background-color: white;
+  box-shadow: 0px 0px 5px gray; */
+  cursor: pointer;
+  transform: translate(-15px, -30px);
+}
+.big-length2{
+  position: absolute;
+  padding-right : 50px;
+  padding-bottom: 60px;
+  border-radius: 50%;
+  /* background-color: white;
+  box-shadow: 0px 0px 5px gray; */
+  cursor: pointer;
+  transform: translate(-20px, -35px);
+}
+.big-width2rotate2{
+  position: absolute;
+  padding-right : 60px;
+  padding-bottom: 70px;
+  border-radius: 50%;
+  /* background-color: white;
+  box-shadow: 0px 0px 5px gray; */
+  cursor: pointer;
+  transform : rotate(45deg);
+  transform: translate(0px, -15px);
+}
+
+.big-length3{
+  position: absolute;
+  padding-right : 70px;
+  padding-bottom: 100px;
+  border-radius: 50%;
+  /* background-color: white;
+  box-shadow: 0px 0px 5px gray; */
+  cursor: pointer;
+  transform: translate(-25px, -35px);
+}
+
+.big-length3rotate{
+  position: absolute;
+  padding-right : 70px;
+  padding-bottom: 100px;
+  border-radius: 50%;
+  /* background-color: white;
+  box-shadow: 0px 0px 5px gray; */
+  cursor: pointer;
+  transform: rotate(-45deg);
+}
+
+.big-length4{
+  position: absolute;
+  padding-right : 70px;
+  padding-bottom: 110px;
+  border-radius: 50%;
+  /* background-color: white;
+  box-shadow: 0px 0px 5px gray; */
+  cursor: pointer;
+  transform: translate(-30px, -40px);
+}
+
+
+
+
+.station-info {
+  font-size: 5px;
+}
+.modal {
+  background-color: white;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 500px;
+  height: 110%;
+  text-align: center;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  animation: slide-out-right 0.5s ease-in-out forwards;
+
+}
+.hidden {
+  animation: slide-out-left 0.5s ease-in-out forwards;
+}
+
+/* 스크롤 안되는거 해결 max-height */
+.modal .content {
+  text-align: center;
+  max-height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+}
+.modal .content table {
+  margin-left: 0; /* 왼쪽 마진값 조정 */
+  margin-right: auto; /* 오른쪽 마진값 자동 조정하여 가운데 정렬 */
+}
+
+.close-btn2{
+  position: absolute;  
+  top: 40%;
+  left: 100%;
+  cursor: pointer;
+
+  background-color: #dcdcdc;
+  padding: 30px 10px;
+  /* border: 1px solid #404143; */
+  border: none;
+  color: #2f3542  ;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+
+}
+.close-btn {
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  padding-top : 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.modal-open::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  transform: translateX(-100%);
+}
+
+.subway-map img,
+.subway-map .modal-btn {
+  pointer-events: auto;
+}
+
+.modal-open .subway-map img,
+.modal-open .subway-map .modal-btn {
+  pointer-events: none;
+}
+.blur {
+  pointer-events: none;
+}
+
+
+
+.station-label {
+  padding: 0;
+  margin: 0;
+  font-size:12px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 5px;
+  background-color: white;
+  text-align: center;
+  border-radius: 30px;
+  border: 1px solid black;
+}
+
+.station-label:hover{
+  font-weight: bolder;
+  border : 2px solid #E1BEE7;
+  border-radius: 50px;
+  color: #E1BEE7;
+}
+.currentTime{
+  /* height: 100%; */
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  padding: 20px 0;
+}
+.currentTime > p{
+  font-weight: bold;
+}
+
+
+
+
+/* 
+
+.minTime{
+  display: flex;
+  position:absolute;
+  width:1000px;
+  left: 20%;
+  top:30%;
+  order : 1;
+}
+.estimateTime{
+  font-size : 30px;
+  font-weight :470;
+  margin-right: 10px;
+}
+
+.minTrans {
+  display: flex;
+  position : absolute;
+  width:1000px;
+  left : 20%;
+  top : 50%;
+}
+
+
+
+
+
+
+
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-top:15px;
+}
+
+.listmarker {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: black;
+  border: 2px solid;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+  border-color: inherit;
+}
+li:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: calc(100% - 70px);
+  border-left: 2px solid;
+  position: absolute;
+  top: 45px;
+  left: 141.5px;
+  z-index: -1;
+  border-color: gray; /* 리스트마커의 border-color 상속받기 */ 
+
+  
+
+@keyframes slide-out-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-out-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2d707fd8.css",
+    "main.js": "/static/js/main.c880fde4.js",
+    "static/js/787.24a7fc36.chunk.js": "/static/js/787.24a7fc36.chunk.js",
+    "static/media/main.mp4": "/static/media/main.6d9fca4dadcf35ff2a77.mp4",
+    "static/media/subway_map.jpg": "/static/media/subway_map.58d6b8bba1caff884e86.jpg",
+    "static/media/pin.png": "/static/media/pin.255766f3dca60425f9f0.png",
+    "static/media/pinLogo.png": "/static/media/pinLogo.822aeed2e3c9a58f0a99.png",
+    "index.html": "/index.html",
+    "main.2d707fd8.css.map": "/static/css/main.2d707fd8.css.map",
+    "main.c880fde4.js.map": "/static/js/main.c880fde4.js.map",
+    "787.24a7fc36.chunk.js.map": "/static/js/787.24a7fc36.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d707fd8.css",
+    "static/js/main.c880fde4.js"
+  ]
+}
